@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+.main{
+    width: 100%;
+    height: auto;
+}
+
+.titleContainer{
+    width: 85%;
+    margin: auto;
+}
+
+.title{
+    font-family: Arvo;
+    font-weight: bold;
+}
+
+.detail{
+    width: 100%;
+    /* height: 90vh; */
+}
+
+.detailContainer{
+    width: 85%;
+    margin: auto;
+    height: auto;
+}
+
+.detailTwo, .detailOne{
+    width: 50%;
+    /* height: 100%; */
+}
+
+.detailOne img {
+    width: 100%;
+}
+
+.detailOneContainer {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.detailTwo h6, .detailOne h6{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.detailOneBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.detailOneBtn p {
+    margin-right: 10px;
+    color: skyblue;
+    font-size: 14px;
+}
+
+.detailTwoMain{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+}
+
+.detailTwoContainer {
+    position: relative;
+    width: 40%;
+    height: 350px;
+    margin-bottom: 10px;
+}
+
+.detailContainer img {
+    width: 100%;
+}
+
+.detailTwoProfile{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.detailTwoProfileOne {
+    width: 30%;
+    height: 100%;
+}
+.detailTwoProfileTwo {
+    width: 70%;
+    /* height: 100%; */
+}
+
+.detailTwoBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.detailTwoBtn p {
+    margin-right: 10px;
+    color: crimson;
+    font-size: 14px;
+}

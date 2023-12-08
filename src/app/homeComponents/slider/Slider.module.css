@@ -1,0 +1,31 @@
+.parent {
+    width: 98%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: auto;
+  }
+  
+.child {
+    /* width: 2640px; */
+    height: 350px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+
+.element{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: orangered;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.productsMain{
+    width: 20%;
+    height: 200px;
+    padding: 10px;
+}

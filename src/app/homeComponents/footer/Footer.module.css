@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+.main{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+
+.container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 43, 43, 1);
+    z-index: 10;
+    opacity: 80%;
+}
+
+.one, .two {
+    padding: 20px;
+    width: 50%;
+    height: 350px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.one p{
+    
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.bottom{
+   width: 100%;
+   height: 205px;
+   display: flex;
+   align-items: end;
+   justify-content: center;
+   font-family: 'Inter', sans-serif;
+}
+
+.bottomContainer {
+    width: 95%;
+    height: 40%;
+}
+
+.bottomDetail{
+    display: grid;
+    height: 50%;
+    grid-template-columns: 30% 40% 30%;
+    border-bottom: 1.5px solid white;
+}
+
+.twoIcons{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.twoIconsContainer{
+    width: 40%;
+    height: 100%;
+}
+
+.twoIconsContainer ul div {
+    margin-bottom: 10px;
+}
+
+
+.twoDetails{
+    height: 180px;
+    color: white;
+    font-size: 30px;
+}
