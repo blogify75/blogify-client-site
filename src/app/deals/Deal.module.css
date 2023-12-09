@@ -1,0 +1,17 @@
+.main{
+   width: 100%;
+   margin-top: 40px;
+
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.productsMain{
+    width: 100%;
+    height: 400px;
+}

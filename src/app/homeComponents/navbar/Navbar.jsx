@@ -17,7 +17,7 @@ const Navbar = () => {
                         <ul className={`only_flex`}>
                             <Link style={{textDecoration:'none', color:'black', marginRight:'25px'}} href='/'>HOME</Link>
                             <Link style={{textDecoration:'none', color:'black', marginRight:'25px'}} href=''>ABOUT US</Link>
-                            <Link style={{textDecoration:'none', color:'black', marginRight:'25px'}} href=''>DEALS & SHOPPING</Link>
+                            <Link style={{textDecoration:'none', color:'black', marginRight:'25px'}} href='/deals'>DEALS & SHOPPING</Link>
                             <Link style={{textDecoration:'none', color:'black', marginRight:'25px'}} href='/blogs'>BLOGS</Link>
                         </ul>
                     </div>

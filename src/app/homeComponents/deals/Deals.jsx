@@ -2,6 +2,7 @@
 import { dealsProduct } from '../../../data/data';
 import deals from './Deals.module.css';
 import Slider from '../slider/Slider';
+import Link from 'next/link';
 
 const Deals = async() => {
 
@@ -28,13 +29,13 @@ const Deals = async() => {
                 <h5 className={`${deals.sub_title}`}  style={{marginTop:'0'}}>Buy your desired product with best deal</h5>
                 <br />
                 <section  className={`${deals.products}`}>
-                <p style={{fontWeight:'bold', marginLeft:'1%',}}>Exciting Deals <span style={{color:'lightblue', marginLeft:'10px'}}>See all deals</span></p>
+                <p style={{fontWeight:'bold', marginLeft:'1%',}}>Exciting Deals <Link href='/deals' style={{color:'lightblue', marginLeft:'10px', textDecoration:'none'}}>See all deals</Link></p>
                
                 <Slider dealsProduct={getAllData}></Slider>
                     
                 </section>
                 <section  className={`${deals.products}`}>
-                <p style={{fontWeight:'bold', marginLeft:'1%'}}>Deals under $25 <span style={{color:'lightblue', marginLeft:'10px'}}>See more</span></p>
+                <p style={{fontWeight:'bold', marginLeft:'1%'}}>Deals under $25 <Link href='/deals' style={{color:'lightblue', marginLeft:'10px', textDecoration:'none'}}>See more</Link></p>
                 <Slider dealsProduct={underTwentyFive}></Slider>
                 </section>
           </div>
