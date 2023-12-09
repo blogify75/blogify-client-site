@@ -35,7 +35,7 @@ const Deals = async() => {
                 </section>
                 <section  className={`${deals.products}`}>
                 <p style={{fontWeight:'bold', marginLeft:'1%'}}>Deals under $25 <span style={{color:'lightblue', marginLeft:'10px'}}>See more</span></p>
-                    <Slider dealsProduct={underTwentyFive}></Slider>
+                <Slider dealsProduct={underTwentyFive}></Slider>
                 </section>
           </div>
         </div>

@@ -47,14 +47,14 @@ const Slider = ({dealsProduct}) => {
         onMouseEnter={() => setPause(true)}
         onMouseLeave={() => setPause(false)}
         className={slider.parent} ref={parentRef}>
-        <div  className={slider.child}>
+        <div style={{width:`${dealsProduct?.length * 240}px`}}  className={`${slider.child}`}>
       
             {
                 dealsProduct?.slice(0, 12)?.map(data => {
                     return (
                         <div className={`${slider.productsMain}`} key={data?.id}>
-                            <div style={{backgroundColor:'lightGray', width:'220px', height:'170px'}}>
-                               <Image src={data?.img} height={180} width={220} alt=""></Image>
+                            <div className='flex' style={{ width:'220px', height:'170px', display:'block'}}>
+                               <Image src={data?.img} height={170} width={220} alt=""></Image>
                             </div>
                             <br />
                             <span style={{color:'white', backgroundColor:'red', padding:'2px 8px', borderRadius:'3px'}}> 30%</span>
