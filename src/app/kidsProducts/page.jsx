@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import kids from './kidsProducts.module.css';
 import getProducts from '../libs/getProducts';
+import AffiliatedImage from '../component/AffiliatedImage';
 
 const KidsProducts = async() => {
 
@@ -20,9 +21,7 @@ const KidsProducts = async() => {
                 bfData?.map(data => {
                     return (
                         <div className={`${kids.productsMain}`} key={data?.id}>
-                            <div className='flex' style={{ width:'220px', height:'170px', display:'block', margin:'auto'}}>
-                                <Image src={data?.img} height={170} width={220} alt=""></Image>
-                            </div>
+                             <AffiliatedImage img={data?.img} id={data?._id} affiliate={data?.affiliateLink} />
                             <br />
                             <div style={{width:'220px', margin:'auto'}}>
                                 <span style={{color:'white', backgroundColor:'red', padding:'2px 8px', borderRadius:'3px'}}> 30%</span>

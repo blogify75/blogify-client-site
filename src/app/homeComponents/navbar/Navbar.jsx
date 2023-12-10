@@ -37,25 +37,25 @@ const Navbar = () => {
         <div className={`${nav.footer}`}>
             <div className={`${nav.footerContainer}`}>
                 <div>
-                    Latest Blogs
+                <Link style={{textDecoration:'none', color:'white'}} href="/blogs">Latest Blogs</Link>
                 </div>
                 <div>
-                    Personal Care
+                <Link style={{textDecoration:'none', color:'white'}} href="/personalCare">Personal Care</Link>
                 </div>
                 <div>
                     <Link style={{textDecoration:'none', color:'white'}} href="/beautyAndFashion">Beauty & Fashion</Link>
                 </div>
                 <div>
-                    Pet life
+                    <Link style={{textDecoration:'none', color:'white'}} href="/petLife">Pet life</Link>    
                 </div>
                 <div>
-                    Social
+                    <Link style={{textDecoration:'none', color:'white'}} href="/social">Social</Link>    
                 </div>
                 <div>
                     <Link style={{textDecoration:'none', color:'white'}} href="/kidsProducts">Kids Products</Link>
                 </div>
                 <div>
-                    Latest Deals
+                    <Link style={{textDecoration:'none', color:'white'}} href="/deals">Latest Deals</Link>
                 </div>
             </div>
         </div>

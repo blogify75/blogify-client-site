@@ -1,26 +1,25 @@
 import Image from 'next/image';
 import React from 'react';
-import bf from './beautyAndFashion.module.css';
 import getProducts from '../libs/getProducts';
+import care from './personalCare.module.css'
 import AffiliatedImage from '../component/AffiliatedImage';
 
-const BeautyAndFashion = async() => {
-
+const personalCare = async() => {
     const response = await getProducts();
     const getAllData = await response?.data?.data;
 
     const bfData = getAllData?.filter(f => {
-        return f?.categories === 'beautyAndFashion';
+        return f?.categories === 'personalCare';
     })
   
 
     return (
-        <div className={`${bf.main}`}>
-           <div className={`${bf.container}`} >
+        <div className={`${care.main}`}>
+           <div className={`${care.container}`} >
             {
                 bfData?.map(data => {
                     return (
-                        <div className={`${bf.productsMain}`} key={data?.id}>
+                        <div className={`${care.productsMain}`} key={data?.id}>
                              <AffiliatedImage img={data?.img} id={data?._id} affiliate={data?.affiliateLink} />
                             <br />
                             <div style={{width:'220px', margin:'auto'}}>
@@ -41,4 +40,4 @@ const BeautyAndFashion = async() => {
 
 }
 
-export default BeautyAndFashion;
+export default personalCare;

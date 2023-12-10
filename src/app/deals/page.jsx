@@ -1,6 +1,8 @@
 import React from 'react';
 import deal from './Deal.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
+import AffiliatedImage from '../component/AffiliatedImage';
 
 const Deals = async() => {
     const url = `https://blogify-server.vercel.app/api/v1/product` ;
@@ -11,7 +13,8 @@ const Deals = async() => {
     const data = await response.json();
     const getAllData = await data?.data?.data;
 
-  
+    console.log(getAllData)
+    
 
     return (
         <div className={`${deal.main}`}>
@@ -20,9 +23,7 @@ const Deals = async() => {
                 getAllData?.map(data => {
                     return (
                         <div className={`${deal.productsMain}`} key={data?.id}>
-                            <div className='flex' style={{ width:'220px', height:'170px', display:'block', margin:'auto'}}>
-                                <Image src={data?.img} height={170} width={220} alt=""></Image>
-                            </div>
+                            <AffiliatedImage img={data?.img} id={data?._id} affiliate={data?.affiliateLink} />
                             <br />
                             <div style={{width:'220px', margin:'auto'}}>
                                 <span style={{color:'white', backgroundColor:'red', padding:'2px 8px', borderRadius:'3px'}}> 30%</span>

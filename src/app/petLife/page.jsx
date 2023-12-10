@@ -1,27 +1,28 @@
 import Image from 'next/image';
 import React from 'react';
-import bf from './beautyAndFashion.module.css';
+import pet from './petLife.module.css';
 import getProducts from '../libs/getProducts';
+import Link from 'next/link';
 import AffiliatedImage from '../component/AffiliatedImage';
 
-const BeautyAndFashion = async() => {
+const PetLife = async() => {
 
     const response = await getProducts();
     const getAllData = await response?.data?.data;
 
     const bfData = getAllData?.filter(f => {
-        return f?.categories === 'beautyAndFashion';
+        return f?.categories === 'petLife';
     })
   
 
     return (
-        <div className={`${bf.main}`}>
-           <div className={`${bf.container}`} >
+        <div className={`${pet.main}`}>
+           <div className={`${pet.container}`} >
             {
                 bfData?.map(data => {
                     return (
-                        <div className={`${bf.productsMain}`} key={data?.id}>
-                             <AffiliatedImage img={data?.img} id={data?._id} affiliate={data?.affiliateLink} />
+                        <div className={`${pet.productsMain}`} key={data?.id}>
+                                 <AffiliatedImage img={data?.img} id={data?._id} affiliate={data?.affiliateLink} />
                             <br />
                             <div style={{width:'220px', margin:'auto'}}>
                                 <span style={{color:'white', backgroundColor:'red', padding:'2px 8px', borderRadius:'3px'}}> 30%</span>
@@ -41,4 +42,4 @@ const BeautyAndFashion = async() => {
 
 }
 
-export default BeautyAndFashion;
+export default PetLife;
