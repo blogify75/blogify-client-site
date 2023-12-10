@@ -4,10 +4,11 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "**"
+                hostname: "**"  //accept all img url
             }
         ]
-    }
+    },
+
 }
 
 module.exports = nextConfig

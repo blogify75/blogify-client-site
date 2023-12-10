@@ -43,7 +43,7 @@ const Navbar = () => {
                     Personal Care
                 </div>
                 <div>
-                    Beauty & Fashion
+                    <Link style={{textDecoration:'none', color:'white'}} href="/beautyAndFashion">Beauty & Fashion</Link>
                 </div>
                 <div>
                     Pet life
@@ -52,7 +52,7 @@ const Navbar = () => {
                     Social
                 </div>
                 <div>
-                    Kids Products
+                    <Link style={{textDecoration:'none', color:'white'}} href="/kidsProducts">Kids Products</Link>
                 </div>
                 <div>
                     Latest Deals
