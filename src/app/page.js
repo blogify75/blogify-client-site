@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <Intro />
-      <LatestBlogNews />
+      {/* <LatestBlogNews /> */}
       <Deals />
       <About />
       <Service />
