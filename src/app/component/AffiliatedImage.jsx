@@ -35,7 +35,7 @@ const AffiliatedImage = ({img, id, affiliate}) => {
 
     return (
         <div className='flex' style={{ width:'220px', height:'170px', display:'block', margin:'auto'}}>
-            <Link onClick={() => handleCount(id)}  href={`/`}>
+            <Link onClick={() => handleCount(id)} target='_blank' href={`${affiliate}`}>
                 <Image src={img} height={170} width={220} alt=""></Image>
                 
             </Link>
