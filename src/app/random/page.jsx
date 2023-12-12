@@ -11,7 +11,7 @@ const PetLife = async() => {
     const getAllData = await response?.data?.data?.data;
 
     const bfData = getAllData?.filter(f => {
-        return f?.categories === 'petLife';
+        return f?.categories === 'random';
     })
   
 

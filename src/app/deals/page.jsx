@@ -13,9 +13,6 @@ const Deals = async() => {
     const data = await response.json();
     const getAllData = await data?.data?.data;
 
-    console.log(getAllData)
-    
-
     return (
         <div className={`${deal.main}`}>
            <div className={`${deal.container}`} >
@@ -32,6 +29,7 @@ const Deals = async() => {
                                 <p style={{fontSize:'11px', marginTop:'5px', fontWeight:'bold'}}>$ <span style={{fontSize:'20px'}}>{data?.price}</span> </p>
                                 <br />
                                 <div dangerouslySetInnerHTML={{__html:data?.description?.slice(0, 50) }}></div>
+                                <Link style={{textDecoration:'none'}} href={`/${data?.categories}/${data?._id}`}>...detail</Link>
                             </div>
                         </div>  
                     )

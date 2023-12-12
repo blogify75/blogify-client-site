@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import React from 'react';
 import kids from './kidsProducts.module.css';
-import getProducts from '../libs/getProducts';
 import AffiliatedImage from '../component/AffiliatedImage';
+import getAllProducts from '../libs/getAllProducts';
+import Link from 'next/link';
 
 const KidsProducts = async() => {
 
-    const response = await getProducts();
-    const getAllData = await response?.data?.data;
+    const response = await getAllProducts();
+    const getAllData = await response?.data?.data?.data;
 
     const bfData = getAllData?.filter(f => {
         return f?.categories === 'kidsProducts';
@@ -30,6 +31,7 @@ const KidsProducts = async() => {
                                 <p style={{fontSize:'11px', marginTop:'5px', fontWeight:'bold'}}>$ <span style={{fontSize:'20px'}}>{data?.price}</span> </p>
                                 <br />
                                 <div dangerouslySetInnerHTML={{__html:data?.description?.slice(0, 50) }}></div>
+                                <Link style={{textDecoration:'none'}} href={`/${data?.categories}/${data?._id}`}>...detail</Link>
                             </div>
                         </div>  
                     )

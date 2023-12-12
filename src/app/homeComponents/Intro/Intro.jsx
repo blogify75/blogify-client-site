@@ -3,16 +3,12 @@ import introImg from '../../../images/top-view-adult-with-devices-1.png';
 import { IoSearch } from "react-icons/io5";
 
 import Image from 'next/image';
+import SearchField from '@/app/component/searchField/SearchField';
 const Intro = () => {
     return (
         <div className={`${intro.main} `}>
             <div className={`${intro.search} `}>
-                  <div className={`${intro.inputContainer} `}>
-                    <div className={` ${intro.searchSymbol} flex `}>
-                    <IoSearch />
-                    </div>
-                    <input placeholder='Search' type="text" name="" id="" className={` ${intro.introInput}`} />
-                  </div>
+                  <SearchField/>
             </div>
             <div className={`${intro.detail} only_flex`}>
                     <div className={`${intro.detailOne}`}>

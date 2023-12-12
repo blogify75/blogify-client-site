@@ -1,15 +1,12 @@
-export default async function getProducts(){
+import axios from "axios";
+
+export default async function getProducts(search){
   
-  const response = await fetch(`https://blogify-server.vercel.app/api/v1/product`,{
+  const response = await axios.get(`https://blogify-server.vercel.app/api/v1/product?searchTerm=${search}`,{
       cache: "no-store",
     }
   );
   
-  if (!response.ok) {
-    throw new Error("failted to fetch blog data");
-  }
 
-  
-
-  return await response.json();
+  return  response
 };

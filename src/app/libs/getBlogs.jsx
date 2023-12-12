@@ -1,15 +1,13 @@
-// export default async function getBlogs(){
-  
-//   const response = await fetch(`https://blogify-server.vercel.app/api/v1/blog?page=${pageNumber}&limit=${10}`,{
-//       cache: "no-store",
-//     }
-//   );
-  
-//   if (!response.ok) {
-//     throw new Error("failted to fetch blog data");
-//   }
+import axios from "axios";
 
+export default async function getBlogs(search){
+
+  const response = await axios.get(`https://blogify-server.vercel.app/api/v1/blog?searchTerm=${search}`,{
+      cache: "no-store",
+    }
+  );
+  
   
 
-//   return await response.json();
-// };
+  return response
+};

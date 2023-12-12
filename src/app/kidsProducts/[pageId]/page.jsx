@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bf from './beautiAndFashionDetail.module.css';
+import bf from './kidsProduct.module.css';
 
 const pageId = async ({params}) => {
 
@@ -26,7 +26,7 @@ const pageId = async ({params}) => {
                 </div>
                <div style={{padding:'0 15px',}}>
                     <h1>{detailData?.title}</h1>
-                    <h3 style={{color:'red'}}>Price: ${detailData?.price}</h3>
+                    <h3>{detailData?.price}</h3>
                     <div style={{color:'gray', paddingBottom:'30px'}} dangerouslySetInnerHTML={{__html: detailData?.description}}></div>
                 </div>
            </div>

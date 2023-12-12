@@ -1,0 +1,9 @@
+.main{
+    width: 100%;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

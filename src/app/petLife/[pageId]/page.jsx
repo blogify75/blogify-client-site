@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bf from './beautiAndFashionDetail.module.css';
+import bf from './petLife.module.css';
 
 const pageId = async ({params}) => {
 
