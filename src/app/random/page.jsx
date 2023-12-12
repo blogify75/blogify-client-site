@@ -1,6 +1,6 @@
-import Image from 'next/image';
+
 import React from 'react';
-import pet from './petLife.module.css';
+import pet from './random.module.css';
 import Link from 'next/link';
 import AffiliatedImage from '../component/AffiliatedImage';
 import getAllProducts from '../libs/getAllProducts';
