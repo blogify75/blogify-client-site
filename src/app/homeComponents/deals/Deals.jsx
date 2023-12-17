@@ -14,8 +14,6 @@ const Deals = async() => {
     const data = await response.json();
     const getAllData = await data?.data?.data;
 
-    console.log(getAllData);
-
     const underTwentyFive = getAllData?.filter(f => {
         return f?.price <= 25
     });

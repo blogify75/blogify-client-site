@@ -16,8 +16,6 @@ const SearchField = () => {
         const getBlogData = async () => {
             const response = await getBlogs(search);
             const data = response
-            console.log(data)
-          
             setBlog(data)
         }
         const getProductData = async () => {

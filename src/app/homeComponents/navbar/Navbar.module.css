@@ -48,17 +48,17 @@
 }
 
 .signIn{
-    border: 2px solid red;
+    border: 2px solid #E1151DD9;
     border-radius: 5px;
     background: none;
     font-weight: bold;
 }
 
 .signUp{
-    background: red;
+    background: #E1151DD9;
     color: white;
     border-radius: 5px;
-    border: 2px solid red;
+    border: 2px solid #E1151DD9;
     font-weight: bold;
 }
 

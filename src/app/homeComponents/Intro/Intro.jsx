@@ -42,9 +42,9 @@ const Intro = () => {
                         So whether you are seeking the perfect lipstick shade, the comfiest bed for your furry friend, or insights into the social issues of our time, Blogify has you covered. Join us on this journey of discovery and lets navigate the world of trends and affairs together.
                         </p>
                         <br />
-                        <button className={`${intro.btn}`}>
+                        {/* <button className={`${intro.btn}`}>
                             Get Started 
-                        </button>
+                        </button> */}
                     </div>
                     <div className={`${intro.detailTwo}`}>
                         <Image src={introImg} alt="" />

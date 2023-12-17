@@ -9,6 +9,7 @@
     height: 58px;
     margin: auto;
     position: relative;
+    z-index: 12;
 }
 
 .detail{

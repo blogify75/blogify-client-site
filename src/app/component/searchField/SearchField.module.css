@@ -7,7 +7,7 @@
     transform: translateX(-100%);
     display: flex;
     border-radius: 12px;
-    border: 2px solid red;
+    border: 2px solid #E1151DD9;
     background-color: rgba(225, 21, 29, 0.1);
 }
 
@@ -15,7 +15,7 @@
     width: 30px;
     height: 28px;
     border-radius: 10px;
-    background-color: red;
+    background-color: #E1151DD9;
     color: white;
     font-size: 18px;
 }

@@ -29,7 +29,7 @@ const LatestBlogNews = async () => {
                                     <div className={`${blogNews.detailOneContainer}`} key={data?.id}>
                                         <Image src={data?.img} width={300} height={400} alt="" />
                                         <h3>{data?.title}</h3>
-                                        <p style={{fontSize:'14px'}}>{data?.sub_title?.length > 30 ? data?.sub_title?.slice(0,30) + '...see more'  : data?.sub_title }</p>
+                                        <p style={{fontSize:'14px'}}>{data?.sub_title?.length > 300 ? data?.sub_title?.slice(0,300) : data?.sub_title }</p>
                                         <br />
                                         <div className={`${blogNews.detailOneBtn}`}>
                                             <Link style={{textDecoration:'none'}} href={`/blogs/${data?._id}`}><p>READ MORE &gt;</p></Link>
