@@ -23,13 +23,17 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className={`${nav.right}  flex`}>
-                    <div className={`${nav.rightContainer}  flex_around`}>
-                        <button className={`${nav.signIn} flex`}>
-                            SIGN IN
-                        </button>
-                        <button className={`${nav.signUp} flex`}>
-                            SIGN UP
-                        </button>
+                    <div  className={`${nav.rightContainer}  flex_around`}>
+                            <button className={`${nav.signIn} flex`}>
+                                <Link style={{textDecoration:'none', color:'black'}} href='https://dashboard.blogify.life/' target='__blank'>
+                                    SIGN IN
+                                </Link>
+                            </button>
+                            <button className={`${nav.signUp} flex`}>
+                                <Link style={{textDecoration:'none', color:'black'}} href='https://dashboard.blogify.life/signup' target='__blank'>
+                                    SIGN UP
+                                </Link>
+                            </button>
                     </div>
                 </div>
             </div>

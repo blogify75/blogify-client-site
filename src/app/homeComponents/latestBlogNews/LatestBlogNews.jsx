@@ -27,7 +27,7 @@ const LatestBlogNews = async () => {
                             getAllData?.slice(0,1)?.map(data => {
                                 return (
                                     <div className={`${blogNews.detailOneContainer}`} key={data?.id}>
-                                        <Image src={data?.img} width={300} height={400} alt="" />
+                                        <Image style={{borderRadius:'10px'}} src={data?.img} width={300} height={400} alt="" />
                                         <h3>{data?.title}</h3>
                                         <p style={{fontSize:'14px'}}>{data?.sub_title?.length > 300 ? data?.sub_title?.slice(0,300) : data?.sub_title }</p>
                                         <br />
@@ -46,13 +46,13 @@ const LatestBlogNews = async () => {
                             getAllData?.slice(0,4)?.map(data => {
                                 return (
                                         <div className={`${blogNews.detailTwoContainer}`} key={data?.id}>
-                                            <Image src={data?.img} width={300} height={200} alt="" />
+                                            <Image  style={{borderRadius:'10px'}} src={data?.img} width={300} height={200} alt="" />
                                             <h6>{data?.title}</h6>
                                             <br />
                                             <p style={{fontSize:'13px', color:'gray'}}>{data?.sub_title?.length > 30 ? (data?.sub_title?.slice(0,30) + `...`)  : data?.sub_title }</p>
                                             {data?.sub_title?.length > 30 && <Link style={{textDecoration:'none'}} href={`/blogs/${data?._id}`}>..see more</Link> }
-                                            <div className={`${blogNews.detailTwoProfile} only_flex `}>
-                                                <div className={`${blogNews.detailTwoProfileOne} flex`}>
+                                            <div className={`${blogNews.detailTwoProfile} only_flex`}>
+                                                <div className={`${blogNews.detailTwoProfileOne} flex_start`}>
                                                     <div
                                                     className='flex'
                                                      style={{
