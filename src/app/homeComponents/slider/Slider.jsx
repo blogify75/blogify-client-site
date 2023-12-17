@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 const Slider = ({dealsProduct}) => {
     const [pause, setPause] = useState(false);
+    console.log(dealsProduct)
 
     const parentRef = useRef(null);
     useEffect(() => {
