@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 .main{
     width: 100%;
 }
@@ -14,6 +15,7 @@
     width: 85%;
     height: auto;
     margin: auto;
+    position: relative;
 }
 
 
@@ -21,13 +23,16 @@
 .detailOne{
     width: 70%;
     height: auto;
+    z-index: 10;
 }
+
 .detailTwo{
     width: 30%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    z-index: 10;
 }
 
 .detailTwo img {
@@ -36,15 +41,18 @@
 }
 
 .detailTitle{
-    background-color: red;
+    background: #E1151DD9;
     color: white;
     font-size: 35px;
     font-weight: bold;
     font-family: 'Arvo', serif;
+    padding: 0 5px;
+    text-shadow: 2px 2px 4px #0000003d;
 }
 
+
 .detailPara{
-    font-family: 'Arvo', serif;
+    font-family: 'Manrope', sans-serif;
     font-weight: bold;
     font-size: 17px;
 }

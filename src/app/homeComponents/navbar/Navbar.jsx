@@ -1,5 +1,5 @@
 import nav from './Navbar.module.css';
-import logo from '../../../images/blogify.png';
+import logo from '../../../images/blogify-new.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,8 +9,8 @@ const Navbar = () => {
        <div>
          <div className={`${nav.main}`}>
             <div className={`${nav.container}`}>
-                <div className={`${nav.left}  flex`}>
-                    <Image src={logo} alt='blogify' />
+                <div className={`${nav.left}  flex `}>
+                    <Image src={logo} width={200} height={80} alt='blogify' />
                 </div>
                 <div className={`${nav.middle}  flex `}>
                     <div className={`${nav.middleContainer} flex `}>

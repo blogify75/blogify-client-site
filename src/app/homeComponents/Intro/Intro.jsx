@@ -1,7 +1,6 @@
 import intro from './Intro.module.css';
 import introImg from '../../../images/top-view-adult-with-devices-1.png';
-import { IoSearch } from "react-icons/io5";
-
+import bg from '../../../images/eclipse.png';
 import Image from 'next/image';
 import SearchField from '@/app/component/searchField/SearchField';
 const Intro = () => {
@@ -11,6 +10,14 @@ const Intro = () => {
                   <SearchField/>
             </div>
             <div className={`${intro.detail} only_flex`}>
+                    <div style={{
+                        width:'100%',
+                        height:'400px',
+                        position:'absolute',
+                        top:'0'
+                    }}>
+                        <Image src={bg} height={550} width={1200} alt=''></Image>
+                    </div>
                     <div className={`${intro.detailOne}`}>
                         <br />
                         <span className={`${intro.detailTitle}`}>

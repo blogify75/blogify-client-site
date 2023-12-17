@@ -2,17 +2,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import getProducts from '../libs/getProducts';
 import axios from 'axios';
+import getAllProducts from '../libs/getAllProducts';
 
 const AffiliatedImage = ({img, id, affiliate}) => {
 
     const [productData,setProductData] = useState([]);
-   
+
     useEffect(() => {
        async function getData(){
-        const response = await getProducts();
-        setProductData(response?.data?.data)
+        const response = await getAllProducts();
+        setProductData(response?.data?.data?.data);
        }
        getData();
     })
@@ -22,15 +22,11 @@ const AffiliatedImage = ({img, id, affiliate}) => {
         const findProduct = productData?.find(f => {
             return f?._id === theId
         });
-
         const totalCount = findProduct?.clickPerCount + 1;
-
         const updateCount = {
             clickPerCount: totalCount
         }
-        
         await axios.patch(`https://blogify-server.vercel.app/api/v1/product/${theId}`,updateCount);
-       
     }
 
     return (
