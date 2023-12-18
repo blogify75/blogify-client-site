@@ -17,7 +17,7 @@ const About = () => {
                 </div>
             </div>
             <br /> 
-            <section className={`${about.mainContainer} border only_flex`}>
+            <section className={`${about.mainContainer}  only_flex`}>
                     <div className={`${about.mainConImg}`}>
                         <Image src={img} alt="" />
                     </div>
@@ -25,10 +25,10 @@ const About = () => {
                        <div style={{width:'350px', margin:'auto',paddingTop:'60px'}}>
                             <p className={`${about.mainConDetailP}`}>Unleash Your <br /> Creativity</p>
                        </div>
-                       <div style={{width:'500px', margin:'auto',paddingTop:'20px'}}>
+                       <div className={`${about.shadow}`}>
                             <Image style={{width:'80%', margin:'auto', display:'block'}} src={shadow} alt="" />
                        </div>
-                       <div style={{width:'500px', margin:'auto',paddingTop:'20px', color:'rgba(255, 255, 255, 1)', fontSize:'20px'}}>
+                       <div className={about.mainConDetailDes} style={{width:'100%', margin:'auto',paddingTop:'20px', color:'rgba(255, 255, 255, 1)', fontSize:'20px'}}>
                             <p>
                                 With Blogify, you have the freedom to write about any topic that inspires you. From personal experiences to professional advice, our platform caters to a wide range of interests. Let your creativity flow and captivate your audience with engaging content.
                             </p>

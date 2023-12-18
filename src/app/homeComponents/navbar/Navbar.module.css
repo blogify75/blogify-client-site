@@ -93,6 +93,10 @@
     display: none;
 }
 
+.footerContainerRes{
+    display: none;
+}
+
 
 @media screen and (min-width: 502px) and (max-width: 1000px) {
     .containerRes{

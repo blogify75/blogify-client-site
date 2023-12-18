@@ -76,9 +76,9 @@ const LatestBlogNews = async () => {
                         }
                     </div>
                     <div className={`${blogNews.detailTwoBtn}`}>
-                            <Link style={{textDecoration:'none'}} href={'/blogs'}><p> MORE NEWS &gt;</p></Link>
-                        </div>
-                </div>
+                        <Link style={{textDecoration:'none'}} href={'/blogs'}><p> MORE NEWS &gt;</p></Link>
+                    </div>
+                    </div>
                 </div>
            </section>
         </div>

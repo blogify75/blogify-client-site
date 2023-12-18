@@ -108,3 +108,59 @@
     color: crimson;
     font-size: 14px;
 }
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .detailContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .detailOne{
+        width: 100%;
+    }
+    .detailTwo{
+        width: 100%;
+    }
+
+    .detailTwoMain{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .detailTwoContainer{
+        width: 80%;
+    }
+
+    .detailTwoContainer{
+        height: 370px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .detailContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .detailOne{
+        width: 100%;
+    }
+    .detailTwo{
+        width: 100%;
+    }
+
+    .detailTwoMain{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .detailTwoContainer{
+        width: 80%;
+    }
+
+    .detailTwoContainer{
+        height: 370px;
+        margin-bottom: 0px;
+    }
+}

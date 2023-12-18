@@ -14,11 +14,11 @@ const Footer = () => {
         }}
         className={`${footer.main}`}>
             <div className={`${footer.container}`}>
-                <div className='only_flex'>
+                <div className={`${footer.sub_container} only_flex`}>
                     <div className={`${footer.one} `}>
                         <p>Stay</p>
                         <p>Connected</p>
-                        <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', width:'500px'}}><p>With</p> <p><Image src={blogify} alt="" /></p> </div>
+                        <div className={footer.withAndBlogify}><p>With</p> <p className={footer.blogifyImg}><Image src={blogify} alt="" /></p> </div>
                         <br />
                         <div style={{width:'100px', padding:'5px', borderRadius:'20px', backgroundColor:'white', cursor:'pointer'}} className={`${footer.btn} flex_between`}>
                             <span style={{paddingLeft:'10px', fontWeight:'bold'}}>Sign In</span>
@@ -47,7 +47,7 @@ const Footer = () => {
                                         </ul>
                                     </div>   
                             </div>
-                            <div className={`${footer.twoDetails} `}>
+                            <div className={`${footer.twoDetails}`}>
                                 <p>
                                 Blogify is a platform that empowers writers to share their voice with the world. Whether you are a seasoned blogger or just starting out, Blogify provides the tools and support you need to succeed.
                                 </p>
@@ -71,7 +71,26 @@ const Footer = () => {
                                 <p>© 2023 Blogify. All rights reserved.</p>
                             </div>
                         </div>
+                        <div className={`${footer.bottomDetailRes}`}>
+                            <div className=''>
+                                <p style={{fontSize:'30px', fontWeight:'bold', color:'white'}}>blogify</p>
+                            </div>
+                            <div style={{color:'white', fontSize:'20px'}} className=' flex_around'>
+                                <div style={{width:'40%'}}>
+                                    <p>Writing</p>
+                                    <p>Blog</p>
+                                    <p>Video</p>
+                                </div>
+                               <div style={{width:'40%'}}>
+                                    <p>Affiliat</p>
+                                    <p>Contact</p>
+                                   
+                               </div>
+                            </div>
+                            
+                        </div>
                        <p style={{textAlign:'center', color:'white', padding:'10px 0', fontSize:'18px'}}>Terms and Conditions | Privacy Policy</p>
+                       <p className={footer.footerLastRes} style={{textAlign:'center', color:'white', padding:'10px 0', fontSize:'18px'}}>© 2023 Blogify. All rights reserved.</p>
                     </div>
                 </div>
             </div>

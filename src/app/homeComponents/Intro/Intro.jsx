@@ -6,15 +6,17 @@ import SearchField from '@/app/component/searchField/SearchField';
 const Intro = () => {
     return (
         <div className={`${intro.main} `}>
-            <div className={`${intro.search} `}>
+            <div className={`${intro.search}`}>
                   <SearchField/>
             </div>
             <div className={`${intro.detail} only_flex`}>
-                    <div style={{
-                        width:'100%',
-                        height:'400px',
-                        position:'absolute',
-                        top:'0'
+                    <div
+                        className={`${intro.bg}`}
+                        style={{
+                            width:'100%',
+                            height:'400px',
+                            position:'absolute',
+                            top:'0'
                     }}>
                         <Image src={bg} height={550} width={1200} alt=''></Image>
                     </div>

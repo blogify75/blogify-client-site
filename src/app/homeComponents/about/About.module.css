@@ -55,3 +55,58 @@
     color:rgba(255, 255, 255, 1);
     font-weight: bold;
 }
+
+.shadow{
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    .title{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .titleOne, .titleTwo{
+        width: 100%
+    }
+    .titleOne p{
+        font-size: 50px;
+        margin-bottom: 30px;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .titleOne, .titleTwo{
+        width: 100%
+    }
+    .titleOne p{
+        font-size: 50px;
+        margin-bottom: 30px;
+        
+    }
+
+    .mainContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mainConImg{
+        width: 100%;
+    }
+
+    .mainConDetail{
+        width: 100%
+    }
+    .mainConDetailDes p{
+        font-size: 15px;
+        margin: 20px;
+    }
+}
