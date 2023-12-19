@@ -9,7 +9,7 @@ import { useState } from 'react';
 const Navbar = () => {
     const [open , setOpen] = useState(false);
     return (
-       <div>
+       <div onClick={() => setOpen(false)}>
          <div className={`${nav.main}`}>
             <div className={`${nav.container}`}>
                 <div className={`${nav.left}  flex`}>
@@ -44,9 +44,12 @@ const Navbar = () => {
                 <div className={`${nav.leftRes}  flex`}>
                     <Image src={logo} width={180}  alt='blogify' />
                 </div>
-                <div style={{position:'relative'}} className={`${nav.middleRes}  flex_end `}>
+                <div style={{position:'relative'}} className={`${nav.middleRes}  flex_end  `}>
                     <div className={`${nav.middleContainerRes} flex `}>
-                        <p style={{cursor:'pointer'}} onClick={() => setOpen(!open)}>< RxHamburgerMenu /></p>
+                        <p style={{cursor:'pointer'}} onClick={(e) => {
+                            e.stopPropagation();
+                            setOpen(!open)
+                        }}>< RxHamburgerMenu /></p>
                     </div>
                     <div style={{
                         width:'200px',

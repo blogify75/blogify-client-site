@@ -3,15 +3,6 @@
 .main{
     width: 100%;
 }
-
-.search{
-    width: 85%;
-    height: 58px;
-    margin: auto;
-    position: relative;
-    z-index: 12;
-}
-
 .detail{
     width: 85%;
     height: auto;

@@ -30,7 +30,7 @@ const Blogs = async({searchParams}) => {
             <div className=""></div>
           </div>
         </div>
-        <div className={`${blogs.heighlighted_Part} `}>
+        {/* <div className={`${blogs.heighlighted_Part} `}>
           <div className={`${blogs.heighlighted_title} `}>
             <p>Heighlighted Blog :</p>
             <p>Find new, handpicked stories you’ll love, updated daily.</p>
@@ -75,7 +75,7 @@ const Blogs = async({searchParams}) => {
               </div>
             );
           })}
-        </div>
+        </div> */}
         <div className={`${blogs.allBlogs} `}>
           <div className={`${blogs.allBlogs_title} `}>
             <p>All Blogs : {id ? id : 1}</p>
@@ -83,21 +83,21 @@ const Blogs = async({searchParams}) => {
           {getAllData?.map((data) => {
             return (
             
-                  <div  key={data?.id} className={`${blogs.allBlogs_container} `}>
-                  <div className={``}>
+                  <div key={data?.id} className={`${blogs.allBlogs_container} `}>
+                  <div className={`${blogs.allBlogs_container_img} flex`}>
                     <Image
-                      style={{ width: "100%", height: "35vh" }}
+
                       src={data?.img}
                       alt=""
-                      width={500}
-                      height={500}
+                      width={300}
+                      height={300}
                     />
                   </div>
-                  <div style={{ paddingLeft: "20px" }} className={``}>
+                  <div className={`${blogs.allBlogs_container_detail} `}>
                     <div className={`${blogs.allBlogs_Detail_title} `}>
                       {data?.title}
                     </div>
-                    <div className={`${blogs.allBlogs_Detail_notifier} `}>
+                    <div className={`${blogs.allBlogs_Detail_notifier}`}>
                       <div style={{ display: "flex", alignItems: "center" }}>
                         <div
                           style={{
@@ -106,17 +106,17 @@ const Blogs = async({searchParams}) => {
                             height: "40px",
                             width: "40px",
                           }}
-                          className="flex"
+                          className={`${blogs.profileLogo} flex`}
                         >
                           {data?.name?.slice(0,1)?.toUpperCase()}
                         </div>
-                        <p style={{ marginLeft: "10px" }}>{data?.name}</p>
-                        <p style={{ marginLeft: "40px", color: "gray" }}>
+                        <p className={`${blogs.notifierPereOne}`}>{data?.name}</p>
+                        <p className={`${blogs.notifierPereTwo}`}>
                           {data?.date}
                         </p>
                       </div>
                     </div>
-                    <div>
+                    <div >
                         {data?.sub_title}
                     </div>
                     <div>

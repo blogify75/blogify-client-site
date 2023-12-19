@@ -29,21 +29,23 @@ const SearchField = () => {
     },[search])
 
     return (
-       <div>
-            <div className={`${searchField.inputContainer} `}>
-                    <div className={` ${searchField.searchSymbol} flex `}>
-                        <IoSearch />
-                    </div>
+       <div className={`${searchField.main}`}>
+            <div className={`${searchField.search} flex_end`}>
+                <div className={`${searchField.inputContainer} `}>
+                        <div className={` ${searchField.searchSymbol} flex `}>
+                            <IoSearch />
+                        </div>
                         <input placeholder='Search' type="text" name="" id="" className={` ${searchField.introInput}`}
-                        onChange={(e) => setSearch(e.target.value)}
+                            onChange={(e) => setSearch(e.target.value)}
                         />
-                    </div>
+                </div>
+            </div>
            
             <br /><br /><br />
             {
                 search &&
-                <div className={`${searchField.searchResult} border`}>
-                    <div>
+                <div className={`${searchField.searchResult}`}>
+                    <div style={{width:'85%', margin:'auto', border:'1px solid gray', padding:'5px', height:'400px', overflowX:'hidden', overflowY:'scroll', marginTop:'30px'}}>
                         {blog?.data?.data?.data?.length > 0 && <h6 style={{backgroundColor:'lightgray', padding:'5px'}}>blogs: {blog?.data?.data?.data?.length}</h6>}
                         {
                             blog?.data?.data?.data?.map(data => {
@@ -58,9 +60,8 @@ const SearchField = () => {
                                 )
                             })
                         }
-                    </div>
-                    <div>
-                    {product?.data?.data?.data?.length > 0 && <h6 style={{backgroundColor:'lightgray', padding:'5px'}}>products: {product?.data?.data?.data?.length}</h6>}
+
+                        {product?.data?.data?.data?.length > 0 && <h6 style={{backgroundColor:'lightgray', padding:'5px',}}>products: {product?.data?.data?.data?.length}</h6>}
                         {
                             product?.data?.data?.data?.map(data => {
                                 return (

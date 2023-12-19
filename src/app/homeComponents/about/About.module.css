@@ -88,9 +88,9 @@
         width: 100%
     }
     .titleOne p{
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 30px;
-        
+        left: 0;
     }
 
     .mainContainer{
@@ -108,5 +108,9 @@
     .mainConDetailDes p{
         font-size: 15px;
         margin: 20px;
+    }
+
+    .mainConDetailP{
+        margin-left: 15px;
     }
 }

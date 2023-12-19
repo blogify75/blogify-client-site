@@ -6,9 +6,7 @@ import SearchField from '@/app/component/searchField/SearchField';
 const Intro = () => {
     return (
         <div className={`${intro.main} `}>
-            <div className={`${intro.search}`}>
                   <SearchField/>
-            </div>
             <div className={`${intro.detail} only_flex`}>
                     <div
                         className={`${intro.bg}`}
