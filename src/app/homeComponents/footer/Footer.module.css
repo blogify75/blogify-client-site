@@ -176,6 +176,9 @@
 }
 
 @media screen and (max-width: 500px) {
+    .one, .two{
+        height: auto;
+    }
     .container{
         display: flex;
         flex-wrap: wrap;
@@ -218,7 +221,7 @@
     }
 
     .withAndBlogify{
-        width: 100%;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-around;

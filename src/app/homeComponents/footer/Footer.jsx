@@ -27,9 +27,8 @@ const Footer = () => {
                             </div>
                         </div>
                         <br />
-                        
                     </div>
-                    <div className={`${footer.two} `}>
+                    <div className={`${footer.two}`}>
                             <div className={`${footer.twoIcons} `}>
                                     <div className={`${footer.twoIconsContainer} `}>
                                         <ul>

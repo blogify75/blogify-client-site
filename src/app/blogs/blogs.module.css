@@ -166,14 +166,18 @@
         background-color: rgb(211, 230, 236);
         width: 100%;
     }
-    .allBlogs_Detail_title, .allBlogs_Detail_notifier, .allBlogs_Detail_Detail{
-       
+    .allBlogs_Detail_notifier, .allBlogs_Detail_Detail{
         margin-bottom: 0px;
-      
+    }
+    .allBlogs_Detail_title{
+        height: auto;
     }
 
     .allBlogs_Detail_notifier{
         height: 25px;
+        font-style: italic;
+        font-size: 13.5px;
+        color: gray;
     }
 
     .profileLogo{
