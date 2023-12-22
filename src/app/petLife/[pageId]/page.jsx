@@ -22,7 +22,7 @@ const pageId = async ({params}) => {
             <br />
            <div className={`${bf.container}`}>
                 <div style={{backgroundColor:'lightblue', padding: '20px 0'}}>
-                    <Image style={{margin:'auto', display:'block'}} src={detailData?.img} width={700} height={500} alt='blogify-image'/>
+                    <Image className={`${bf.image}`} src={detailData?.img} width={500} height={400} alt='blogify-image'/>
                 </div>
                <div style={{padding:'0 15px',}}>
                     <h1>{detailData?.title}</h1>
