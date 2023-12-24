@@ -101,7 +101,7 @@ const Navbar = () => {
                     <Link style={{textDecoration:'none', color:'white'}} href="/petLife">Pet life</Link>    
                 </div>
                 <div>
-                    <Link style={{textDecoration:'none', color:'white'}} href="/social">Social</Link>    
+                    <Link style={{textDecoration:'none', color:'white'}} href="/video">Social</Link>    
                 </div>
                 <div>
                     <Link style={{textDecoration:'none', color:'white'}} href="/kidsProducts">Kids Products</Link>
@@ -127,7 +127,7 @@ const Navbar = () => {
                         <Link style={{textDecoration:'none', color:'white'}} href="/petLife">Pet life</Link>    
                     </div>
                     <div>
-                        <Link style={{textDecoration:'none', color:'white'}} href="/social">Social</Link>    
+                        <Link style={{textDecoration:'none', color:'white'}} href="/video">Social</Link>    
                     </div>
                     <div>
                         <Link style={{textDecoration:'none', color:'white'}} href="/kidsProducts">Kids Products</Link>
