@@ -1,0 +1,3 @@
+# https://www.blogify.life/robotstxt.html
+User-agent: *
+Disallow:
