@@ -2,8 +2,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import slider from './Slider.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Slider = ({dealsProduct}) => {
+    
     const [pause, setPause] = useState(false);
    
     const parentRef = useRef(null);
@@ -53,8 +55,10 @@ const Slider = ({dealsProduct}) => {
                 dealsProduct?.slice(0, 12)?.map(data => {
                     return (
                         <div className={`${slider.productsMain}`} key={data?.id}>
-                            <div className='flex' style={{ width:'220px', height:'170px', display:'block'}}>
-                               <Image src={data?.img} height={170} width={220} alt=""></Image>
+                            <div  className='flex' style={{ width:'220px', height:'170px', display:'block'}}>
+                              <Link href={`/${data?.categories}/${data?._id}`}>
+                                <Image src={data?.img} height={170} width={220} alt=""></Image>
+                              </Link>
                             </div>
                             <br />
                             <span style={{color:'white', backgroundColor:'red', padding:'2px 8px', borderRadius:'3px'}}> 30%</span>
